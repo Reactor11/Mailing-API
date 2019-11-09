@@ -1,6 +1,12 @@
 from flask import Flask
 import os
+from flask import send_from_directory
 app = Flask(__name__)
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/<email>')
 def send_mail(email):
@@ -11,6 +17,7 @@ def send_mail(email):
    user_ID = ""
    user_PWD = ""
    conn.login(user_ID,user_PWD)
+   # msg = MIMEText("Check")
    fp = open('content.txt', 'r')
    msg = MIMEText(fp.read())
    fp.close()
