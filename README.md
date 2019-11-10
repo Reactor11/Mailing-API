@@ -5,6 +5,6 @@ Problem: Being a small startup company, the Marketing team has to pitch their pr
 
 Solution : This project is a python flask framework based web-app, which send a particular mail(here, Proposal Brochure ) to the mails (of the client company) provided in the URL.
 
-Usage: Put clients email ID here and hit enter
-https://send-mail-url.herokuapp.com/YOUR-EMAIL-ID (For sending to one client only)
+Usage: Put clients email ID here and hit enter  
+https://send-mail-url.herokuapp.com/YOUR-EMAIL-ID (For sending to one client only)  
 https://send-mail-url.herokuapp.com/email-1,email-2,email-3...,email-n (For sending to multiple clients)
