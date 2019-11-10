@@ -7,4 +7,5 @@ Solution : This project is a python flask framework based web-app, which send a 
 
 Usage: Put clients email ID here and hit enter  
 https://send-mail-url.herokuapp.com/YOUR-EMAIL-ID (For sending to one client only)  
-https://send-mail-url.herokuapp.com/email-1,email-2,email-3...,email-n (For sending to multiple clients)
+https://send-mail-url.herokuapp.com/email-1,email-2,email-3...,email-n (For sending to multiple clients)  
+e.g. https://send-mail-url.herokuapp.com/abc@xyz.com,xyz@abc.com
